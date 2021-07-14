@@ -8,9 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/test")
 public class TestController {
+
     @RequestMapping("/test1")
     ResponseEntity<String> test1(){
         return new ResponseEntity<String>("Application is running.", HttpStatus.OK);
     }
+    //
 }
 
